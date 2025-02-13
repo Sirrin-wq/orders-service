@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
-    List<Order> findByOrderDateAnDtotalAmountGreaterThanEqual(LocalDate date, BigDecimal amount);
+    List<Order> findByOrderDateAndTotalAmountGreaterThanEqual(LocalDate date, BigDecimal amount);
 
     @Query("SELECT o FROM Order o WHERE o.orderDate BETWEEN :startDate AND :endDate AND NOT EXISTS (SELECT i FROM o.items i WHERE i.productName = :productName)")
     List<Order> findOrdersWithoutProductAndBetweenDates(

@@ -12,7 +12,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderRequestDto {
-    private String orderNumber;
     private List<OrderDetailsDto> items;
     private String recipient;
     private String deliveryAddress;

@@ -24,7 +24,7 @@ public class OrderServiceImpl implements OrderService {
     private final OrderMapper orderMapper;
     private final RestTemplate restTemplate;
 
-    private static final String NUMBER_GENERATE_SERVICE_URL = "http://localhost:80/numbers";
+    private static final String NUMBER_GENERATE_SERVICE_URL = "http://number-generate-service:80/numbers";
 
     @Override
     public OrderResponseDto createOrder(OrderRequestDto request) {

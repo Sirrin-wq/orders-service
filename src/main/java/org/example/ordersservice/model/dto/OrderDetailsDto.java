@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
+/**
+ * This class represents a data transfer object of the details of an order.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

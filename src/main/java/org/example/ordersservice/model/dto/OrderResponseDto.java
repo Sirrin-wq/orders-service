@@ -10,6 +10,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * This class represents a data transfer object for an order response.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

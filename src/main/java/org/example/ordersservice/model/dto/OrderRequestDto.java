@@ -8,6 +8,9 @@ import org.example.ordersservice.model.entity.PaymentType;
 
 import java.util.List;
 
+/**
+ * This class represents the request data for creating an order.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

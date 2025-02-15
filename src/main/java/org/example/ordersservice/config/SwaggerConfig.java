@@ -7,6 +7,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SwaggerConfig {
+    /**
+     * Creates and configures a custom OpenAPI object for Swagger documentation.
+     */
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
